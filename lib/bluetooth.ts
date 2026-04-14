@@ -17,7 +17,7 @@ export interface BluetoothDevice {
  * @returns Boolean indicating availability
  */
 export const isBluetoothSupported = (): boolean => {
-  return !!(navigator && navigator.bluetooth);
+  return !!(navigator && (navigator as any).bluetooth);
 };
 
 /**
