@@ -1,0 +1,56 @@
+{
+  "name": "Sutra - Real-Time Screen Sharing",
+  "short_name": "Sutra",
+  "description": "Seamless, secure real-time screen sharing platform. Share your screen instantly with a 4-digit code.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#4F46E5",
+  "background_color": "#ffffff",
+  "categories": ["productivity", "utilities"],
+  "screenshots": [
+    {
+      "src": "/screenshot-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/screenshot-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Start Hosting",
+      "short_name": "Host",
+      "description": "Start a new screen sharing session",
+      "url": "/host?mode=start",
+      "icons": [{ "src": "/icon-host.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Join Session",
+      "short_name": "Join",
+      "description": "Join an existing screen sharing session",
+      "url": "/viewer",
+      "icons": [{ "src": "/icon-viewer.png", "sizes": "192x192" }]
+    }
+  ]
+}
