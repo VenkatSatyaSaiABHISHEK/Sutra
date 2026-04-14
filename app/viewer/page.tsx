@@ -750,7 +750,7 @@ export default function ViewerPage() {
 
                   <div className="rounded-[12px] bg-indigo-50 border border-indigo-200 p-4">
                     <p className="text-indigo-700 text-xs">
-                      ℹ️ Bluetooth support will be available soon. Device names will follow the format "Room-1234" where 1234 is the room ID.
+                      ℹ️ Bluetooth support will be available soon. Device names will follow the format &quot;Room-1234&quot; where 1234 is the room ID.
                     </p>
                   </div>
                 </div>
