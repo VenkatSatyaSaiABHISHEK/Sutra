@@ -22,10 +22,10 @@ export const captureScreen = async (
 
     const stream = await navigator.mediaDevices.getDisplayMedia({
       audio: options?.audio || false,
-      video: options?.video || {
+      video: (options?.video || {
         cursor: 'always',
         frameRate: 30,
-      },
+      }) as any,
     });
 
     console.log('Screen captured successfully');
