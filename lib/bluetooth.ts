@@ -17,7 +17,7 @@ export interface BluetoothDevice {
  * @returns Boolean indicating availability
  */
 export const isBluetoothSupported = (): boolean => {
-  return !!(navigator && (navigator as any).bluetooth);
+  return typeof navigator !== 'undefined' && !!navigator.bluetooth;
 };
 
 /**
@@ -31,7 +31,7 @@ export const requestBluetoothDevice = async (): Promise<BluetoothDevice | null> 
       throw new Error('Web Bluetooth API is not supported in this browser');
     }
 
-    const device = await ((navigator as any).bluetooth as any).requestDevice({
+    const device = await navigator.bluetooth!.requestDevice({
       filters: [
         { services: ['generic_access'] },
         { namePrefix: 'Room' }, // Filter for devices with "Room" prefix
@@ -65,7 +65,7 @@ export const connectBluetoothDevice = async (
   device: BluetoothDevice
 ): Promise<boolean> => {
   try {
-    const results = await ((navigator as any).bluetooth as any).getAvailability();
+    const results = await navigator.bluetooth!.getAvailability();
     console.log('Bluetooth availability:', results);
     
     // In a real scenario, you would use the device.gatt.connect()
