@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sutra-app.com",
+    url: "https://sutra-cast.vercel.app",
     siteName: "Sutra",
     title: "Sutra - Real-Time Screen Sharing Platform",
     description: "Share your screen instantly and securely with Sutra. No downloads required. Connect in seconds.",
     images: [
       {
-        url: "https://sutra-app.com/og-image.png",
+        url: "https://sutra-cast.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Sutra Screen Sharing",
@@ -31,11 +31,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sutra - Real-Time Screen Sharing",
     description: "Share your screen instantly and securely with Sutra.",
-    images: ["https://sutra-app.com/twitter-image.png"],
+    images: ["https://sutra-cast.vercel.app/twitter-image.png"],
     creator: "@sutra_app",
   },
   alternates: {
-    canonical: "https://sutra-app.com",
+    canonical: "https://sutra-cast.vercel.app",
   },
 };
 
