@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://sutra-cast.vercel.app/sitemap.xml
+Sitemap: https://sutra-cast.vercel.app/api/sitemap
 
 User-agent: Googlebot
 Allow: /
